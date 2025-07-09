@@ -6,8 +6,8 @@ def stock_marca(productos,stock,marca):
             if marca==i[0] and p==n:
                 e=True
                 t+=v[1]
-    if not e:
-        print("No existe esa marca")
+            if not e:
+                print("No existe esa marca")
     else:
         print(f"El total de stock de la marca {marca} es {t}")
 def busqueda_precio(productos,stock,p1,p2):

@@ -11,12 +11,12 @@ productos={
 }
 stock={
     "8475HD":[389900,10],
-    "2175HD":[299000,5],
+    "2175HD":[327990,4],
     "8762HD":[199900,20],
-    "2912HD":[499990,0],
-    "7452HD":[799990,6],
+    "2912HD":[424990,1],
+    "7452HD":[749990,2],
     "3242HD":[389900,13],
-    "6652HD":[389900,8],
+    "6652HD":[449990,7],
     "1202HD":[389900,5],
 }
 while True:
@@ -27,8 +27,8 @@ while True:
     print("4. Salir")
     try:
         op=int(input("Ingrese una opcion: "))
-    except: ValueError
-    print("Ingrese una opcion Valida")
+    except ValueError:
+        print("Ingrese una opcion Valida")
     match op:
         case 1:
             marca=input("Ingrese marca que desea buscar: ").capitalize()
@@ -39,8 +39,8 @@ while True:
                     p1=int(input("Ingrese rango de precio min: "))
                     p2=int(input("Ingrese rango de precio max: "))
                     break
-                except: ValueError
-                print("Solo se permiten numeros enteros")
+                except ValueError:
+                    print("Solo se permiten numeros enteros")
             busqueda_precio(productos,stock,p1,p2)
         case 3:
             modelo=input("Ingrese modelo a buscar: ").upper()
