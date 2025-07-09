@@ -57,9 +57,6 @@ while True:
         case 4:
             print("Programa Finalizado")
             break
-                
-            
-            
             
     
     
